@@ -48,23 +48,24 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
 ```
 # echo-client.py
 
+
 import socket
-
-HOST = "127.0.0.1"  # The server's hostname or IP address
-PORT = 65432  # The port used by the server
-
+HOST = "127.0.0.1"
+PORT = 65432
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-    s.connect((HOST, PORT))
-    s.sendall(b"Hello, world")
+    s.connect((HOST, PORT)) 
+    s.sendall(b"Selva Kumar A,")
+    s.sendall(b"212222110042")
     data = s.recv(1024)
-
-print(f"Received {data!r}")
+print(f"\nRecived {data!r}")
 ```
 ## OUTPUT:
 ### SERVER SIDE
-![image](https://github.com/Yamunaasri/Echoserver/assets/115707860/10c06f8f-d24e-47a7-835f-43dcb8bf3238)
+![85810b92-4da8-40d4-b932-bb1785a5b91c](https://github.com/user-attachments/assets/455c4395-72f2-4237-bd1f-85233e525ec9)
+
 ### CLIENT SIDE 
-![image](https://github.com/Yamunaasri/Echoserver/assets/115707860/34a55432-7cee-4297-9972-99ae03e9b831)
+![778f154e-3df9-4551-92a6-effb82ced105](https://github.com/user-attachments/assets/eaf9e3b7-0ae8-450d-8169-a70128a80f10)
+
 
 ## RESULT:
-The program is executed successfully
+The program is executed successfully.
